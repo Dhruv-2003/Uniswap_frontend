@@ -10,6 +10,7 @@ import { ReactNode } from 'react'
 import { NavLink, NavLinkProps, useLocation } from 'react-router-dom'
 
 import { ChainSelector } from './ChainSelector'
+import {ShowNotifications} from './ShowNotifications'
 import { MenuDropdown } from './MenuDropdown'
 import { SearchBar } from './SearchBar'
 import { ShoppingBag } from './ShoppingBag'
@@ -104,6 +105,7 @@ const Navbar = () => {
               {!isNftPage && (
                 <Box display={{ sm: 'none', lg: 'flex' }}>
                   <ChainSelector />
+                  <ShowNotifications />
                 </Box>
               )}
 

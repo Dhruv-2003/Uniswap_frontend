@@ -2,7 +2,7 @@ import { useEffect, useContext } from 'react';
 import { EmbedSDK } from "@pushprotocol/uiembed";
 import { Web3Context } from './web3Context';
 
-const showNotifications = () => {
+const ShowNotifications = () => {
     const { account, chainId } = useContext<any>(Web3Context);
 
     useEffect(() => {
@@ -42,4 +42,4 @@ const showNotifications = () => {
     );
 }
 
-export default EmbedPage;
+export default ShowNotifications;
